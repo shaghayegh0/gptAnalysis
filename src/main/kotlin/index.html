@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="text-align: center">
+    <input type="text" id="userInput" placeholder="Enter your text here">
+    <button onclick="display()">GO</button>
+    <p id="result"></p>
+</div>
+<script>
+    function display() {
+        var userInput = document.getElementById("userInput").value;
+        document.getElementById("result").textContent = "You entered: " + userInput.toUpperCase();
+    }
+</script>
+</body>
+</html>
